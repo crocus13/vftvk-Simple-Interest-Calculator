@@ -6,7 +6,7 @@ function showMessage()
 function compute() 
 {
 	var principal = document.getElementById("principal").value;
-	if(parseInt(principal) < 1) //Validation to enter only positive values as the principal amount
+	if(principal == "" || principal < 1) //Validation to enter only positive values as the principal amount
     {  
 		alert("Enter a positive number");
 		document.getElementById("principal").focus();
